@@ -1,0 +1,178 @@
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #121212, #191919, #242424);
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* TÍTULOS */
+h1 {
+    color: #1ed760;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #1ed760;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* FORMULÁRIOS */
+form {
+    background-color: #242424;
+    width: 400px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+label {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    padding: 12px;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+form input {
+    width: 100%;
+}
+
+input:focus {
+    border: 1px solid #1ed760;
+    box-shadow: 0 0 8px rgba(30, 215, 96, 0.3);
+}
+
+/* BOTÕES */
+button,
+input[type="button"] {
+    background-color: #1ed760;
+    color: #121212;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover,
+input[type="button"]:hover {
+    background-color: #1fdf64;
+    transform: scale(1.04);
+}
+
+/* LINKS */
+a {
+    color: #1ed760;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    color: #b3b3b3;
+}
+
+/* TABELAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242424;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #1ed760;
+    color: #121212;
+    font-weight: bold;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444444;
+}
+
+tbody tr:hover {
+    background-color: #333333;
+}
+
+/* ADMINISTRAÇÃO */
+body > h2 {
+    border-left: 4px solid #1ed760;
+    padding-left: 12px;
+}
+
+body > input {
+    max-width: 250px;
+}
+
+/* CAMPOS DESABILITADOS */
+input:disabled {
+    background-color: #444444;
+    color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    form {
+        width: 100%;
+        padding: 25px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+}
